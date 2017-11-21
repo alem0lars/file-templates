@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>%HERE%TODO TITLE</title>
+    <meta name="description" content="TODO DESCRIPTION">
+    <meta name="author" content="Alessandro Molari">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/combine/npm/reveal.js@3.5.0/css/reveal.min.css,npm/reveal.js@3.5.0/css/theme/black.min.css,npm/reveal.js@3.5.0/lib/css/zenburn.min.css">
+
+    <style media="screen">
+      .reveal {
+        font-size: 34px;
+      }
+    </style>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/lib/js/head.min.js">
+    </script>
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/js/reveal.min.js">
+    </script>
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides">
+
+        <section>
+          <h1>TODO TITLE</h1>
+          <h4>TODO SUBTITLE</h4>
+          <p><i><small>
+            By
+            <a href="http://alessandro.molari.me">Alessandro Molari</a>
+            for
+            <a href="TODO ORGANIZATION LINK">TODO ORGANIZATION</a>
+          </small></i></p>
+        </section>
+
+        <section data-markdown data-separator="@@@@"
+                 data-separator-vertical="!!!!">
+            <!-- Note:
+              Start with root indentation, in order to make code blocks
+              work correctly
+            -->
+            <script type="text/template">
+TODO PRESENTATION CONTENT
+            </script>
+        </section>
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        markdown: {
+          smartypants: true,
+          smartLists: true,
+          breaks: false,
+          tables: true,
+          gfm: true,
+        },
+        // Parallax background image
+        parallaxBackgroundImage: "https://i.imgur.com/9WgK1b4.jpg",
+        // Parallax background size
+        parallaxBackgroundSize: "2100px 900px",
+        dependencies: [
+          // Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/lib/js/classList.min.js',
+            condition: function() { return !document.body.classList; } },
+
+          // Plugins:
+          // => Highlight: Syntax highlight for <code> elements
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/plugin/highlight/highlight.min.js',
+            async: true,
+            callback: function() { hljs.initHighlightingOnLoad(); } },
+          // => Markdown: Interpret Markdown in <section> elements
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/plugin/markdown/marked.min.js',
+            condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/plugin/markdown/markdown.min.js',
+            condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          // => Math: Use MathJax to render formulas
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/plugin/math/math.min.js',
+            async: true },
+          // => Zoom: Zoom in and out with Alt+click
+          { src: 'https://cdn.jsdelivr.net/npm/reveal.js@3.5.0/plugin/zoom-js/zoom.min.js',
+            async: true },
+        ]
+      });
+    </script>
+
+  </body>
+
+</html>
